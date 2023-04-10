@@ -2,19 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Круизы в Антарктику. Туристическое агенство">
+    <meta http-equiv="X-UA-Compatible" item="IE=edge" />
+    <meta name="viewport" item="width=device-width, initial-scale=1.0" />
+    <meta name="description" item="Круизы в Антарктику. Туристическое агенство">
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/32.png">
-    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="img/favicons/manifest.webmanifest">
-    <link rel="preload" href="fonts/pt-mono-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="./img/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/32.png">
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+    <link rel="manifest" href="./img/favicons/manifest.webmanifest">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts//montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts//montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="page">
@@ -26,7 +27,7 @@
                 <picture>
                   <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
                   <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
-                  <img src="img/logo-desktop.svg" width="215" height="55" alt="Иконка логотипа Круизы в Антарктику.">
+                  <img src="img/logo-desktop.svg" width="70" height="38" alt="Иконка логотипа Круизы в Антарктику.">
                 </picture>
               </div>
             </a>
@@ -52,7 +53,7 @@
                 </a>
               </li>
             </ul>
-            <button class="nav__button" data-burger-button>
+            <button class="navigation__button" data-burger-button>
               <span class="visually-hidden">Открыть / Закрыть меню</span>
             </button>
           </nav>
@@ -63,8 +64,10 @@
         <h1 class="visually-hidden">Круизы в Антарктику</h1>
         <section class="hero">
           <div class="hero__wrapper">
-            <h>Круизы в Антарктику </h2>
-            <p>Волшебный мир айсбергов и пингвинов</p>
+            <div class="hero__description">
+              <h2>Круизы в Антарктику </h2>
+              <p>Волшебный мир айсбергов и пингвинов</p>
+            </div>
           </div>
         </section>
 
@@ -74,30 +77,30 @@
               <h2>Путешествие на край Земли</h2>
               <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
             </div>
-          </div>
-          <div class="about__image">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="./img/about/about-img-mobile.webp 1x, ./img/about/about-img-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="./img/about/about-img-tablet.webp 1x, ./img/about/about-img-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/about/about-img-desktop.webp 1x, ./img/about/about-img-desktop@2x.webp 2x">
+            <div class="about__image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="./img/about/about-img-mobile.webp 1x, ./img/about/about-img-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/about/about-img-tablet.webp 1x, ./img/about/about-img-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/about/about-img-desktop.webp 1x, ./img/about/about-img-desktop@2x.webp 2x">
 
-              <source media="(max-width: 767px)" srcset="./img/about/about-img-mobile.jpg 1x, ./img/about/about-img-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="./img/about/about-img-tablet.jpg 1x, ./img/about/about-img-tablet@2x.jpg 2x">
-              <img src="./img/about/about-img-desktop.jpg" srcset="./img/about/about-img-desktop@2x.jpg 2x" width="560" height="301" alt="Пингвины">
-            </picture>
+                <source media="(max-width: 767px)" srcset="./img/about/about-img-mobile.jpg 1x, ./img/about/about-img-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="./img/about/about-img-tablet.jpg 1x, ./img/about/about-img-tablet@2x.jpg 2x">
+                <img src="./img/about/about-img-desktop.jpg" srcset="./img/about/about-img-desktop@2x.jpg 2x" width="560" height="301" alt="Пингвины">
+              </picture>
+            </div>
           </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" id="advantages">
           <div class="advantages__wrapper">
-            <h2 class="advantages__title visually-hidden">Главные причины выбрать Smart device</h2>
+            <h2>Преимущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--liner">
-                <svg aria-hidden="true" focusable="false" width="27" height="32" fill="currentColor">
+                <svg aria-hidden="true" focusable="false" width="27" height="32">
                   <use xlink:href="./img/sprite.svg#icon-liner"></use>
                 </svg>
                 <h3>Небольшой круизный лайнер</h3>
-                <p>УКруизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
+                <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
               </li>
 
               <li class="advantages__item advantages__item--inclusive">
@@ -119,72 +122,250 @@
           </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog" id="catalog">
           <div class="catalog__wrapper">
-            <h2>Smart Device предлагает следующие товары и услуги</h2>
-            <h3>Товары и услуги<br>Smart Device</h3>
+            <h2>Ближайшие круизы</h2>
             <ul class="catalog__list">
-              <li class="catalog__item catalog__item--production">
-                <a class="catalog__link" href="#">
-                  <p>Производство <br> печатных плат</p>
-                </a>
+
+              <li class="catalog__item">
+                <div class="catalog__item-wrapper">
+                  <h3>Круиз “Астория”</h3>
+                  <div class="catalog__description">
+                    <dl>
+                      <dt>Маршрут</dt>
+                      <dd>Аргентина - Фолклендские острова - Антарктида</dd>
+                      <dt>Порт отправления</dt>
+                      <dd>Ушуайя</dd>
+                      <dt>Продолжительность</dt>
+                      <dd>11 дней</dd>
+                      <dt>Цена</dt>
+                      <dd>от 11500 $</dd>
+                    </dl>
+                  </div>
+                </div>
+                <a class="catalog__button" href="#">Забронировать</a>
               </li>
-              <li class="catalog__item catalog__item--assembly">
-                <a class="catalog__link" href="#">
-                  <p>Монтаж печатных <br> плат</p>
-                </a>
+
+              <li class="catalog__item">
+                <div class="catalog__item-wrapper">
+                  <h3>Круиз “Элайн”</h3>
+                  <div class="catalog__description">
+                    <dl>
+                      <dt>Маршрут</dt>
+                      <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+                      <dt>Порт отправления</dt>
+                      <dd>Буэнос-Айрес</dd>
+                      <dt>Продолжительность</dt>
+                      <dd>20 дней</dd>
+                      <dt>Цена</dt>
+                      <dd>от 14500 $</dd>
+                    </dl>
+                  </div>
+                </div>
+                <a class="catalog__button" href="#">Забронировать</a>
               </li>
-              <li class="catalog__item catalog__item--light">
-                <a class="catalog__link" href="#">
-                  <p>Комплектующие<br> для светотехники</p>
-                </a>
+
+              <li class="catalog__item">
+                <div class="catalog__item-wrapper">
+                  <h3>Круиз “Атлантис”</h3>
+                  <div class="catalog__description">
+                    <dl>
+                      <dt>Маршрут</dt>
+                      <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
+                      <dt>Порт отправления</dt>
+                      <dd>Ушуайя</dd>
+                      <dt>Продолжительность</dt>
+                      <dd>15 дней</dd>
+                      <dt>Цена</dt>
+                      <dd>от 14500 $</dd>
+                    </dl>
+                  </div>
+                </div>
+                <a class="catalog__button" href="#">Забронировать</a>
               </li>
+
+              <li class="catalog__item">
+                <div class="catalog__item-wrapper">
+                  <h3>Круиз “Одиссей”</h3>
+                  <div class="catalog__description">
+                    <dl>
+                      <dt>Маршрут</dt>
+                      <dd>Чили - Антарктида</dd>
+                      <dt>Порт отправления</dt>
+                      <dd>Пунта-Аренас</dd>
+                      <dt>Продолжительность</dt>
+                      <dd>13 дней</dd>
+                      <dt>Цена</dt>
+                      <dd>от 9700 $</dd>
+                    </dl>
+                  </div>
+                </div>
+                <a class="catalog__button" href="#">Забронировать</a>
+              </li>
+
+              <li class="catalog__item">
+                <div class="catalog__item-wrapper">
+                  <h3>Круиз “Олимпия”</h3>
+                  <div class="catalog__description">
+                    <dl>
+                      <dt>Маршрут</dt>
+                      <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
+                      <dt>Порт отправления</dt>
+                      <dd>Ушуайя</dd>
+                      <dt>Продолжительность</dt>
+                      <dd> 21 день</dd>
+                      <dt>Цена</dt>
+                      <dd>от 18600 $</dd>
+                    </dl>
+                  </div>
+                </div>
+                <a class="catalog__button" href="#">Забронировать</a>
+              </li>
+
+              <li class="catalog__item">
+                <div class="catalog__item-wrapper">
+                  <h3>Круиз “Аврора”</h3>
+                  <div class="catalog__description">
+                    <dl>
+                      <dt>Маршрут</dt>
+                      <dd>Аргентина - Антарктида - Чили</dd>
+                      <dt>Порт отправления</dt>
+                      <dd>Ушуайя</dd>
+                      <dt>Продолжительность</dt>
+                      <dd> 14 дней</dd>
+                      <dt>Цена</dt>
+                      <dd>от 11700 $</dd>
+                    </dl>
+                  </div>
+                </div>
+                <a class="catalog__button" href="#">Забронировать</a>
+              </li>
+
+              <li class="catalog__item">
+                <div class="catalog__item-wrapper">
+                  <h3>Круиз “Леонор”</h3>
+                  <div class="catalog__description">
+                    <dl>
+                      <dt>Маршрут</dt>
+                      <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
+                      <dt>Порт отправления</dt>
+                      <dd>Пунта-Аренас</dd>
+                      <dt>Продолжительность</dt>
+                      <dd>17 дней</dd>
+                      <dt>Цена</dt>
+                      <dd>от 12500 $</dd>
+                    </dl>
+                  </div>
+                </div>
+                <a class="catalog__button" href="#">Забронировать</a>
+              </li>
+
+              <li class="catalog__item">
+                <div class="catalog__item-wrapper">
+                  <h3>Круиз “Минион - 1”</h3>
+                  <div class="catalog__description">
+                    <dl>
+                      <dt>Маршрут</dt>
+                      <dd>Аргентина - Антарктида</dd>
+                      <dt>Порт отправления</dt>
+                      <dd>Ушуайя</dd>
+                      <dt>Продолжительность</dt>
+                      <dd>11 дней</dd>
+                      <dt>Цена</dt>
+                      <dd>от 12300 $</dd>
+                    </dl>
+                  </div>
+                </div>
+                <a class="catalog__button" href="#">Забронировать</a>
+              </li>
+
             </ul>
           </div>
         </section>
 
         <section class="form" id="form">
           <div class="form__container" data-form-validate data-callback="base">
-            <div class="form__image">
-              <picture>
-                <source type="image/webp" srcset="img/form/paper-airplane.webp 1x, img/form/paper-airplane@2x.webp 2x">
-                <img src="img/form/paper-airplane.png" srcset="img/form/paper-airplane@2x.png 2x" width="510" height="285"
-                  alt="Самолётик из бумаги.">
-              </picture>
+            <div class="form__description">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
             </div>
-            <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-              <div class="form__heading-wrapper">
-                <h2>Остались вопросы? Задайте их нам!</h2>
-                <p>Мы проконсультируем Вас бесплатно</p>
-              </div>
-              <div class="form__input-wrapper">
-                <div class="form__input form__input--username">
-                  <label for="username" data-validate-type="text" data-required
-                    data-message-base="Поле обязательно к заполнению">
-                    <input type="text" name="username" id="username" placeholder="Имя" required>
-                  </label>
+            <div class="form__item">
+              <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                <div class="form__heading-wrapper">
+                  <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h2>
                 </div>
-                <div class="form__input form__input--userphone">
-                  <label for="phone" data-validate-type="phone" data-required
-                    data-message-base="Поле обязательно к заполнению">
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-                  </label>
+                <div class="form__input-wrapper">
+                  <div class="form__input form__input--username">
+                    <label for="username" data-validate-type="text" data-required
+                      data-message-base="Поле обязательно к заполнению">
+                      <input type="text" name="username" id="username" placeholder="Имя" required>
+                    </label>
+                  </div>
+                  <div class="form__input form__input--userphone">
+                    <label for="phone" data-validate-type="phone" data-required
+                      data-message-base="Поле обязательно к заполнению">
+                      <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                    </label>
+                  </div>
+                  <div class="form__input form__input--email">
+                    <label for="useremail" data-validate-type="email" data-required
+                      data-message-base="Поле обязательно к заполнению">
+                      <input type="email" name="useremail" id="useremail" placeholder="Email" required>
+                    </label>
+                  </div>
+                  <div class="form__input form__input--agreement">
+                    <label for="agreement" data-validate-type="checkbox" data-required>
+                      <input type="checkbox" name="agreement" id="agreement" required checked>
+                      <span>Я согласен на обработку моих персональных данных</span>
+                    </label>
+                  </div>
+                  <button class="form__input form__input--button" type="submit">Оставить заявку</button>
                 </div>
-                <div class="form__input form__input--question">
-                  <label for="question">
-                    <textarea name="question" id="question" placeholder="Ваш вопрос" rows="6"></textarea>
-                  </label>
-                </div>
-                <div class="form__input form__input--agreement">
-                  <label for="agreement" data-validate-type="checkbox" data-required>
-                    <input type="checkbox" name="agreement" id="agreement" required checked>
-                    <span>Я согласен нa обработку персональных данных</span>
-                  </label>
-                </div>
-                <button class="form__input form__input--button" type="submit">Задать вопрос</button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+          <h2 class="visually-hidden">Где нас найти.</h2>
+          <div class="contacts__container">
+            <div class="contacts__map"  id="map">
+              <div class="contacts__map-image">
+                <picture>
+                  <source media="(max-width: 767px)"
+                  srcset="./img/map/map-mobile.webp 1x, ./img/map/map-mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)"
+                  srcset="./img/map/map-tablet.webp 1x, ./img/map/map-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+
+                  <source media="(max-width: 767px)"
+                  srcset="./img/map/map-mobile.jpg 1x, ./img/map/map-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                  srcset="./img/map/map-tablet.jpg 1x, ./img/map/map-tablet@2x.jpg 2x">
+                  <img src="img/map/map-desktop.jpg" srcset="img/map/map-desktop@2x.jpg 2x" width="560" height="306" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
+                </picture>
+              </div>
+            </div>
+
+            <div class="contacts__description">
+              <h3>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</h3>
+              <a class="contacts__link" href="#">
+                <svg class="contacts__icon contacts__icon--map" aria-hidden="true" focusable="false" width="18"
+                  height="22">
+                  <use href="./img/sprite.svg#icon-map" />
+                </svg>
+                <p>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+              </a>
+              <a class="contacts__link" href="tel:88002000000">
+                <svg class="contacts__icon contacts__icon--phone" aria-hidden="true" focusable="false" width="18"
+                  height="18">
+                  <use href="./img/sprite.svg#icon-phone" />
+                </svg>
+                <p>8-800-200-00-00</p>
+              </a>
+            </div>
+          </div>
+
         </section>
       </main>
     </div>
@@ -193,18 +374,27 @@
       <section class="about-us">
         <h2 class="about-us__title visually-hidden">О нас</h2>
         <div class="about-us-container">
+          <div class="about-us__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Преимущества</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Направления</a>
+              </li>
+              <li class="menu__item">
+                <a class="accordion__link" href="#">Ближайшие круизы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
           <div class="about-us__social social">
-            <a class="social__logo" href="index.html">
-              <div class="social__logo-holder">
-                <picture>
-                  <img src="img/logo-desktop.svg" width="215" height="55" alt="Иконка логотипа Smart Device.">
-                </picture>
-              </div>
-            </a>
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <svg fill="currentColor" aria-hidden="true" focusable="false" width="30" height="30" viewBox="0 0 30 30"
+                  <svg fill="currentColor" aria-hidden="true" focusable="false" width="12" height="20" viewBox="0 0 12 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="./img/sprite.svg#ok-icon"></use>
                   </svg>
@@ -213,7 +403,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link" href="https://vk.com/htmlacademy">
-                  <svg fill="currentColor" aria-hidden="true" focusable="false" width="30" height="30" viewBox="0 0 30 30"
+                  <svg fill="currentColor" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="./img/sprite.svg#dzen-icon"></use>
                   </svg>
@@ -222,7 +412,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <svg fill="currentColor" aria-hidden="true" focusable="false" width="30" height="30" viewBox="0 0 30 30"
+                  <svg fill="currentColor" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="./img/sprite.svg#reddit-icon"></use>
                   </svg>
@@ -231,112 +421,9 @@
               </li>
             </ul>
           </div>
-          <div class="about-us__group about-us__group--site accordion">
-            <div class="accordion__item">
-              <div class="accordion__wrapper">
-                <h3>Разделы сайта</h3>
-                <button class="accordion__toggle accordion__toggle--no-js accordion__toggle--closed" type="button">
-                  <span class="visually-hidden">Свернуть. Развернуть</span>
-                </button>
-              </div>
-              <div class="accordion__list accordion__list-site accordion__list--no-js accordion__list--closed">
-                <ul class="accordion__content-wrapper">
-                  <li class="accordion__content">
-                    <a class="accordion__link" href="#">О компании</a>
-                  </li>
-                  <li class="accordion__content">
-                    <a class="accordion__link" href="#">Продукты</a>
-                  </li>
-                  <li class="accordion__content">
-                    <a class="accordion__link" href="#">Производство печатных плат</a>
-                  </li>
-                  <li class="accordion__content">
-                    <a class="accordion__link" href="#">Монтаж печатных плат</a>
-                  </li>
-                </ul>
-                <ul class="accordion__content-wrapper">
-                  <li class="accordion__content">
-                    <a class="accordion__link" href="#">Комплектующие</a>
-                  </li>
-                  <li class="accordion__content">
-                    <a class="accordion__link" href="#">Доставка</a>
-                  </li>
-                  <li class="accordion__content">
-                    <a class="accordion__link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-us__group about-us__group--contacts accordion">
-            <div class="accordion__item">
-              <div class="accordion__wrapper">
-                <h3>Наш офис</h3>
-                <button class="accordion__toggle accordion__toggle--no-js" type="button">
-                  <span class="visually-hidden">Свернуть. Развернуть.</span>
-                </button>
-              </div>
-              <ul class="accordion__list accordion__list--no-js accordion__list--closed">
-                <li class="accordion__content">
-                  <a class="accordion__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
-                </li>
-                <li class="accordion__content">
-                  <a class="accordion__link accordion__link--phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-                </li>
-                <li class="accordion__content">
-                  <a class="accordion__link accordion__link--phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
-                </li>
-                <li class="accordion__content">
-                  <a class="accordion__link accordion__link--phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
     </footer>
-    <div class="modal" data-modal="main-modal">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content" data-form-validate data-callback="base">
-          <div class="modal__header">
-            <b>Закажите звонок</b>
-            <p>Оставьте контакты, мы проконсультируем <br> вас бесплатно в&nbsp;удобное время</p>
-          </div>
-          <button class="modal__button-close" type="reset" aria-label="Закрыть попап" data-close-modal>
-            <svg width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-            <fieldset class="modal__fieldset">
-              <div class="modal__input modal__input--name" data-validate-type="text" data-required
-                data-message-base="Обязательное поле">
-                <label class="visually-hidden" for="name-modal">Имя</label>
-                <input data-focus type="text" placeholder="Имя" name="name" id="name-modal" required>
-              </div>
-              <div class="modal__input modal__input--phone" data-validate-type="phone" data-required
-                data-message-base="Обязательное поле">
-                <label class="visually-hidden" for="phone-modal">Телефон</label>
-                <input type="tel" placeholder="Телефон" name="tel" id="phone-modal" required>
-              </div>
-              <div class="modal__input modal__input--question">
-                <label class="visually-hidden" for="question-modal">Ваш вопрос</label>
-                <textarea placeholder="Ваш вопрос" name="question" rows="5" id="question-modal"></textarea>
-              </div>
-            </fieldset>
-            <div class="modal__button-check" data-validate-type="checkbox" data-required>
-              <label for="agreement-modal" data-validate-type="checkbox" data-required>
-                <input type="checkbox" name="agreement" value="yes" id="agreement-modal" required checked>
-                <span>Я согласен нa обработку персональных данных</span>
-              </label>
-            </div>
-            <button class="modal__button-submit" type="submit">Отправить</button>
-          </form>
-        </div>
-      </div>
-    </div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

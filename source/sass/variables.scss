@@ -3,22 +3,29 @@
 
 // Default
 
-$color-default-black:               #000000;
-$color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
+$color-default-black:#000000;
+$color-default-white:#ffffff;
+$color-transparent:rgba(255, 255, 255, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-neon-blue:#2c39f2;
+$color-torch-red:#ff1553;
+$alice-blue: #f9fbfd;
+$tangaroa: #011c40;
+
 
 // Gradient
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
 // ---------------------------------
+// Font-family
+//
+
+$montserrat: "Montserrat", "Arial", sans-serif;
 
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
@@ -56,3 +63,12 @@ $vp-1920:                           1920px;
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
+
+// Width
+// ---------------------------------
+
+$desktop-width-only: 1920px;
+$desktop-width: 1919px;
+$tablet-width: 1023px;
+$mobile-width: 767px;
+
