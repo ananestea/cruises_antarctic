@@ -4,16 +4,26 @@
 
 .contacts__wrapper {
   max-width: 1260px;
-  padding: 110px 50px 120px;
+  padding: 120px 50px 120px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+}
+
+.contacts__map {
+  min-width: 560px;
 }
 
 .contacts__description {
+  padding-top: 75px;
+
   h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     margin: 0;
+    margin-bottom: 32px;
   }
 
   p {
@@ -21,5 +31,15 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+  }
+}
+
+.contacts__link {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  column-gap: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
   }
 }

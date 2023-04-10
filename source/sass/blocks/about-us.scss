@@ -1,0 +1,28 @@
+.about-us {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1260px;
+  padding: 50px;
+  // padding-bottom: 55px;
+  color: $alice-blue;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  // @media (max-width: $tablet-width) {
+  //   flex-wrap: wrap;
+  // }
+
+  // @media (max-width: $mobile-width) {
+  //   flex-direction: column;
+  // }
+}
