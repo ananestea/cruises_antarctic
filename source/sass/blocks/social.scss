@@ -22,8 +22,17 @@
   // }
 }
 
-.social__item {
+.social__link {
   svg {
     color: $alice-blue;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }

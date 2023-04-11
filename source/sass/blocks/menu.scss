@@ -16,11 +16,18 @@
   // }
 }
 
-.menu__item {
-  a {
-    color: $alice-blue;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+.menu__link {
+  color: $alice-blue;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }

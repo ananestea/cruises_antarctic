@@ -5,10 +5,9 @@
   color: $alice-blue;
   position: absolute;
 
-  // @media (max-width: $tablet-width) {
-  //   min-height: 100px;
-  //   position: relative;
-  // }
+  @media (max-width: $tablet-width) {
+    min-height: 100px;
+  }
 
   // @media (max-width: $mobile-width) {
   //   min-height: 70px;
@@ -21,9 +20,10 @@
   max-width: 1260px;
   padding: 35px 50px 0;
 
-  // @media (max-width: $tablet-width) {
-  //   padding: 10px 60px 25px 50px;
-  // }
+  @media (max-width: $tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 
   // @media (max-width: $mobile-width) {
   //   padding: 10px 25px 20px 26px;

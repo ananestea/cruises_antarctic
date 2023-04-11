@@ -1444,8 +1444,17 @@ button,
   row-gap: 12px;
 }
 
-.social__item svg {
+.social__link svg {
   color: #f9fbfd;
+}
+
+.social__link:hover,
+.social__link:focus {
+  opacity: 0.8;
+}
+
+.social__link:active {
+  opacity: 0.5;
 }
 
 .hero {
@@ -1457,11 +1466,6 @@ button,
   padding: 270px 50px 283px;
   padding-left: 5.35%;
   background-color: #011c40;
-  background-image: -webkit-image-set(url("../img/hero/hero-desktop.webp") 1x, url("../img/hero/hero-desktop@2x.webp") 2x, url("../img/hero/hero-desktop.jpg") 1x, url("../img/hero/hero-desktop@2x.jpg") 2x);
-  background-image: image-set(url("../img/hero/hero-desktop.webp") 1x, url("../img/hero/hero-desktop@2x.webp") 2x, url("../img/hero/hero-desktop.jpg") 1x, url("../img/hero/hero-desktop@2x.jpg") 2x);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .hero__description {
@@ -1983,15 +1987,33 @@ button,
   row-gap: 12px;
 }
 
-.menu__item a {
+.menu__link {
   color: #f9fbfd;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 }
 
+.menu__link:hover,
+.menu__link:focus {
+  opacity: 0.8;
+}
+
+.menu__link:active {
+  opacity: 0.5;
+}
+
 .logo {
   margin-right: 40px;
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.5;
 }
 
 /* @mixin hover-focus {
@@ -2046,29 +2068,48 @@ button,
     padding: 0 24px;
   }
 
+  .main-header {
+    min-height: 100px;
+  }
+
+  .main-header-wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .navigation__list {
+    gap: 23px;
+  }
+
+  .navigation__link p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
   .navigation__logo-wrapper {
-    padding-top: 10px;
+    width: 38px;
+    height: 20px;
   }
 
   .hero__wrapper {
-    background-image: -webkit-image-set(url("../img/hero/hero-tablet.webp") 1x, url("../img/hero/hero-tablet@2x.webp") 2x, url("../img/hero/hero-tablet.jpg") 1x, url("../img/hero/hero-tablet@2x.jpg") 2x);
-    background-image: image-set(url("../img/hero/hero-tablet.webp") 1x, url("../img/hero/hero-tablet@2x.webp") 2x, url("../img/hero/hero-tablet.jpg") 1x, url("../img/hero/hero-tablet@2x.jpg") 2x);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 198px;
-    padding-left: 50px;
-    padding-bottom: 205px;
+    padding-top: 280px;
+    padding-left: 45px;
+    padding-bottom: 280px;
+  }
+
+  .hero__description {
+    max-width: 600px;
   }
 
   .hero__description h2 {
-    font-size: 64px;
-    line-height: 75px;
-    margin-bottom: 2px;
+    font-size: 50px;
+    line-height: 61px;
+    margin-bottom: 29px;
   }
 
   .hero__description p {
-    margin-bottom: 57px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .form {
@@ -2091,6 +2132,14 @@ button,
     padding-top: 198px;
     padding-left: 50px;
     padding-bottom: 205px;
+  }
+
+  .about__text h2 {
+    font-size: 26px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 302px;
   }
 }
 
@@ -2117,45 +2166,9 @@ button,
     height: 35px;
   }
 
-  .about-us {
-    padding: 0;
-    padding-top: 35px;
-    padding-bottom: 35px;
-  }
-
   .hero__wrapper {
     background-image: -webkit-image-set(url("../img/hero/hero-mobile.webp") 1x, url("../img/hero/hero-mobile@2x.webp") 2x, url("../img/hero/hero-mobile.jpg") 1x, url("../img/hero/hero-mobile@2x.jpg") 2x);
     background-image: image-set(url("../img/hero/hero-mobile.webp") 1x, url("../img/hero/hero-mobile@2x.webp") 2x, url("../img/hero/hero-mobile.jpg") 1x, url("../img/hero/hero-mobile@2x.jpg") 2x);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 192px 25px 190px;
-  }
-
-  .hero__description h2 {
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 11px;
-  }
-
-  .hero__description p {
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 43px;
-  }
-
-  .form {
-    background-image: -webkit-image-set(url("../img/form/form-mobile.webp") 1x, url("../img/form/form-mobile@2x.webp") 2x, url("../img/form/form-mobile.jpg") 1x, url("../img/form/form-mobile@2x.jpg") 2x);
-    background-image: image-set(url("../img/form/form-mobile.webp") 1x, url("../img/form/form-mobile@2x.webp") 2x, url("../img/form/form-mobile.jpg") 1x, url("../img/form/form-mobile@2x.jpg") 2x);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 192px 25px 190px;
-  }
-
-  .advantages {
-    background-image: -webkit-image-set(url("../img/advantages/advantages-mobile.webp") 1x, url("../img/advantages/advantages-mobile@2x.webp") 2x, url("../img/advantages/advantages-mobile.jpg") 1x, url("../img/advantages/advantages-mobile@2x.jpg") 2x);
-    background-image: image-set(url("../img/advantages/advantages-mobile.webp") 1x, url("../img/advantages/advantages-mobile@2x.webp") 2x, url("../img/advantages/advantages-mobile.jpg") 1x, url("../img/advantages/advantages-mobile@2x.jpg") 2x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

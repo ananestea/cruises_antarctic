@@ -27,18 +27,18 @@
     padding-bottom: 205px;
   }
 
-  @media (max-width: $mobile-width) {
-    background-image: image-set(
-    url("../img/advantages/advantages-mobile.webp") 1x,
-    url("../img/advantages/advantages-mobile@2x.webp") 2x,
-    url("../img/advantages/advantages-mobile.jpg") 1x,
-    url("../img/advantages/advantages-mobile@2x.jpg") 2x
-    );
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 192px 25px 190px;
-  }
+  // @media (max-width: $mobile-width) {
+  //   background-image: image-set(
+  //   url("../img/advantages/advantages-mobile.webp") 1x,
+  //   url("../img/advantages/advantages-mobile@2x.webp") 2x,
+  //   url("../img/advantages/advantages-mobile.jpg") 1x,
+  //   url("../img/advantages/advantages-mobile@2x.jpg") 2x
+  //   );
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  //   padding: 192px 25px 190px;
+  // }
 }
 
 .advantages__wrapper {
