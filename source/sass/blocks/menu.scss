@@ -7,13 +7,16 @@
   column-gap: 33px;
   row-gap: 12px;
 
-  // @media (max-width: $tablet-width) {
-  //   width: 140px;
-  // }
+  @media (max-width: $tablet-width) {
+    column-gap: 23px;
+  }
 
-  // @media (max-width: $mobile-width) {
-  //   width: 150px;
-  // }
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    row-gap: 8px;
+  }
 }
 
 .menu__link {
@@ -29,5 +32,10 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 15px;
   }
 }

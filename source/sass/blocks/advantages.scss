@@ -22,9 +22,9 @@
     background-position: center;
     background-size: cover;
 
-    padding-top: 198px;
-    padding-left: 50px;
-    padding-bottom: 205px;
+    // padding-top: 198px;
+    // padding-left: 50px;
+    // padding-bottom: 205px;
   }
 
   // @media (max-width: $mobile-width) {
@@ -46,6 +46,14 @@
   padding: 110px 50px 120px;
   margin: 0 auto;
 
+  @media (max-width: $tablet-width) {
+    padding: 90px 45px 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 57px 15px 66px;
+  }
+
   h2 {
     font-weight: 600;
     font-size: 28px;
@@ -54,6 +62,17 @@
     text-align: center;
     margin: 0;
     margin-bottom: 47px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 26px;
+      line-height: 39px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -64,18 +83,48 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
+  row-gap: 40px;
+
+  @media (max-width: $tablet-width) {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
 }
 
 .advantages__item {
   padding: 30px;
   padding-bottom: 44px;
   background-color: $alice-blue;
+
+  @media (max-width: $tablet-width) {
+    padding: 27px 18px 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 25px 18px 20px;
+  }
+
+
   h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     margin: 0;
     margin-bottom: 9px;
+
+    @media (max-width: $tablet-width) {
+      line-height: 25px;
+    }
+
+    @media (max-width: $mobile-width) {
+      max-width: 190px;
+    }
   }
 
   p {
@@ -94,5 +143,50 @@
     p {
       max-width: 285px;
     }
+
+    svg {
+      @media (max-width: $tablet-width) {
+        width: 27px;
+        height: 26px;
+      }
+    }
   }
+
+  &--liner {
+    svg {
+      @media (max-width: $tablet-width) {
+        width: 21px;
+        height: 26px;
+      }
+    }
+  }
+
+  &--zodiac {
+
+    @media (max-width: $mobile-width) {
+      padding-top: 20px;
+    }
+    h3 {
+      @media (max-width: $tablet-width) {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: $mobile-width) {
+        margin-bottom: 7px;
+      }
+    }
+    svg {
+      @media (max-width: $tablet-width) {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 3px;
+      }
+
+      @media (max-width: $mobile-width) {
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+
 }

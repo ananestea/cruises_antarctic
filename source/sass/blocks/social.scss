@@ -1,6 +1,11 @@
 .social {
   margin-left: auto;
   padding-top: 10px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    padding-top: 0;
+  }
 }
 
 .social__list {
@@ -13,9 +18,9 @@
   row-gap: 12px;
 
 
-  // @media (max-width: $tablet-width) {
-  //   width: 140px;
-  // }
+  @media (max-width: $tablet-width) {
+    gap: 23px;
+  }
 
   // @media (max-width: $mobile-width) {
   //   width: 150px;
@@ -25,6 +30,11 @@
 .social__link {
   svg {
     color: $alice-blue;
+
+    @media (max-width: $tablet-width) {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &:hover,
@@ -34,5 +44,14 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  &--ok {
+    svg {
+      @media (max-width: $tablet-width) {
+        width: 10px;
+        height: 16px;
+      }
+    }
   }
 }

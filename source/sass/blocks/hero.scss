@@ -7,30 +7,30 @@
   padding: 270px 50px 283px;
   padding-left: 5.35%;
   background-color: $tangaroa;
-  // background-image: image-set(
-  //   url("../img/hero/hero-desktop.webp") 1x,
-  //   url("../img/hero/hero-desktop@2x.webp") 2x,
-  //   url("../img/hero/hero-desktop.jpg") 1x,
-  //   url("../img/hero/hero-desktop@2x.jpg") 2x
-  // );
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
+  background-image: image-set(
+    url("../img/hero/hero-desktop.webp") 1x,
+    url("../img/hero/hero-desktop@2x.webp") 2x,
+    url("../img/hero/hero-desktop.jpg") 1x,
+    url("../img/hero/hero-desktop@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (max-width: $tablet-width) {
-    // background-image: image-set(
-    // url("../img/hero/hero-tablet.webp") 1x,
-    // url("../img/hero/hero-tablet@2x.webp") 2x,
-    // url("../img/hero/hero-tablet.jpg") 1x,
-    // url("../img/hero/hero-tablet@2x.jpg") 2x
-    // );
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
+    background-image: image-set(
+    url("../img/hero/hero-tablet.webp") 1x,
+    url("../img/hero/hero-tablet@2x.webp") 2x,
+    url("../img/hero/hero-tablet.jpg") 1x,
+    url("../img/hero/hero-tablet@2x.jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-    padding-top: 280px;
+    padding-top: 267px;
     padding-left: 45px;
-    padding-bottom: 280px;
+    padding-bottom: 276px;
   }
 
   @media (max-width: $mobile-width) {
@@ -43,7 +43,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 192px 25px 190px;
+    padding: 177px 15px 180px;
   }
 }
 
@@ -53,6 +53,7 @@
 
   @media (max-width: $tablet-width) {
     max-width: 600px;
+    margin: 0;
   }
 
   h2 {
@@ -67,14 +68,14 @@
     @media (max-width: $tablet-width) {
       font-size: 50px;
       line-height: 61px;
-      margin-bottom: 29px;
+      margin-bottom: 12px;
     }
 
-    // @media (max-width: $mobile-width) {
-    //   font-size: 36px;
-    //   line-height: 42px;
-    //   margin-bottom: 11px;
-    // }
+    @media (max-width: $mobile-width) {
+      font-size: 36px;
+      line-height: 45px;
+      margin-bottom: 8px;
+    }
   }
 
   p {
@@ -90,11 +91,11 @@
       line-height: 22px;
     }
 
-    // @media (max-width: $mobile-width) {
-    //   font-size: 14px;
-    //   line-height: 22px;
-    //   margin-bottom: 43px;
-    // }
+    @media (max-width: $mobile-width) {
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 200px;
+    }
   }
 
 }
