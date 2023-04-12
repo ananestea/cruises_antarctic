@@ -3,7 +3,6 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initMenu} from './modules/init-menu.js';
 import {observer, map} from './modules/map';
-// import {Burger} from './modules/burger';
 
 // ---------------------------------
 
@@ -26,8 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initMenu();
     observer.observe(map);
-    // const burger = new Burger();
-    // burger.init();
   });
 });
 

@@ -162,10 +162,10 @@
   }
 
   &--zodiac {
-
     @media (max-width: $mobile-width) {
       padding-top: 20px;
     }
+
     h3 {
       @media (max-width: $tablet-width) {
         margin-bottom: 20px;
@@ -175,6 +175,7 @@
         margin-bottom: 7px;
       }
     }
+
     svg {
       @media (max-width: $tablet-width) {
         width: 36px;
@@ -187,6 +188,4 @@
       }
     }
   }
-
-
 }

@@ -1381,7 +1381,7 @@ button,
 
 .navigation__link p {
   margin: 0;
-  max-width: 190px;
+  max-width: 200px;
 }
 
 .navigation__link:hover,
@@ -1399,6 +1399,15 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.navigation__button:hover,
+.navigation__button:focus {
+  opacity: 0.8;
+}
+
+.navigation__button:active {
+  opacity: 0.5;
 }
 
 .navigation__logo {
@@ -1500,7 +1509,7 @@ button,
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
   margin-bottom: 13px;
 }
@@ -1511,12 +1520,12 @@ button,
   font-size: 20px;
   line-height: 24px;
   margin: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .form {
   width: 100%;
-  background-color: #011c40;
+  background-color: #d0ddf3;
   background-image: -webkit-image-set(url("../img/form/form-desktop.webp") 1x, url("../img/form/form-desktop@2x.webp") 2x, url("../img/form/form-desktop.jpg") 1x, url("../img/form/form-desktop@2x.jpg") 2x);
   background-image: image-set(url("../img/form/form-desktop.webp") 1x, url("../img/form/form-desktop@2x.webp") 2x, url("../img/form/form-desktop.jpg") 1x, url("../img/form/form-desktop@2x.jpg") 2x);
   background-repeat: no-repeat;
@@ -1557,8 +1566,8 @@ button,
 .form__item {
   margin-left: auto;
   background-color: #011c40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   padding: 50px;
   padding-top: 45px;
 }
@@ -1700,7 +1709,7 @@ button,
   display: block;
   width: 50%;
   height: 6px;
-  border: 1px solid #101A56;
+  border: 1px solid #101a56;
   border-right: none;
   border-top: none;
   -webkit-transform: rotate(-45deg);
@@ -1985,8 +1994,8 @@ button,
   padding: 15px 25px 25px;
   padding-left: 0;
   padding-right: 0;
-  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 }
 
 .catalog__item .catalog__description dl {
@@ -2516,6 +2525,21 @@ button,
 
   .navigation__button {
     display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #f9fbfd;
+  }
+
+  .navigation__button:active {
+    color: #f9fbfd;
+    background-color: transparent;
   }
 
   .navigation__button::before {
@@ -2540,7 +2564,6 @@ button,
     width: calc(100% - 35px);
     background-color: #ffffff;
     padding: 80px 26px 15px;
-    min-height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2634,24 +2657,6 @@ button,
 
   .navigation--nojs .navigation__item {
     display: block;
-  }
-
-  .navigation__button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-    padding: 25px;
-    position: absolute;
-    top: 0;
-    right: 10px;
-    color: #f9fbfd;
-  }
-
-  .navigation__button:active {
-    color: #f9fbfd;
-    background-color: transparent;
   }
 
   .navigation--closed .navigation__button::before {
