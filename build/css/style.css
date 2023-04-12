@@ -1312,10 +1312,6 @@ button,
   flex-grow: 1;
 }
 
-.page--opened {
-  overflow: hidden;
-}
-
 .main-header {
   width: 100%;
   min-height: 120px;
