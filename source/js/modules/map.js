@@ -1,4 +1,4 @@
-let apiLoaded = false;
+let loaded = false;
 
 const createMap = ({id, initials, placemark}) => {
   const map = new window.ymaps.Map(id, initials);
@@ -8,7 +8,7 @@ const createMap = ({id, initials, placemark}) => {
 
 function initMap(mapData) {
   document.querySelector('.contacts__map-image').style.display = 'none';
-  if (apiLoaded) {
+  if (loaded) {
     createMap(mapData);
 
     return;
@@ -20,19 +20,19 @@ function initMap(mapData) {
   scriptElement.addEventListener('load', () => {
     window.ymaps.ready(() => {
       createMap(mapData);
-      apiLoaded = true;
+      loaded = true;
     });
   });
   document.body.append(scriptElement);
 }
 
 const map = document.getElementById('map');
-const observer = new IntersectionObserver((entries) => {
+const mapInitializer = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     initMap({
       id: 'map',
       initials: {
-        center: [59.938803, 30.323026],
+        center: [59.938900, 30.323037],
         controls: [],
         zoom: 16,
       },
@@ -44,16 +44,12 @@ const observer = new IntersectionObserver((entries) => {
           iconImageHref: 'img/svg/pin.svg',
           iconImageSize: [18, 22],
           iconLayout: 'default#image',
-          iconShadow: false,
         }
       ],
     });
 
-    observer.unobserve(map);
+    mapInitializer.unobserve(map);
   }
-}, {
-  rootMargin: '0px',
-  threshold: 0,
 });
 
-export {observer, map};
+export {mapInitializer, map};
