@@ -19,11 +19,16 @@
   }
 }
 
+.menu__item {
+  max-width: 190px;
+}
+
 .menu__link {
   color: $alice-blue;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  max-width: 190px;
 
   &:hover,
   &:focus {

@@ -64,8 +64,59 @@
   max-width: 260px;
   height: 386px;
 
+  &:hover,
+  &:focus {
+    background-color: $tangaroa;
+    grid-template-rows: 311px 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    h3 {
+      padding-top: 29px;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .catalog__item-wrapper {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      overflow-y: scroll;
+      scrollbar-width: 0;
+
+       /* stylelint-disable */
+       &::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* stylelint-enable */
+    }
+
+    .catalog__button {
+      display: block;
+    }
+
+    .catalog__image {
+      display: none;
+    }
+
+    .catalog__description {
+      display: block;
+    }
+  }
+
   @media (max-width: $tablet-width) {
-    grid-template-rows: 80% 75px;
+    grid-template-rows: 80% 20%;
     max-width: none;
     width: 100%;
     min-height: 386px;
@@ -106,10 +157,54 @@
 
   .catalog__description {
     display: none;
+    color: $alice-blue;
+    padding: 15px 25px 25px;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 1px;
+    }
+
+    dd {
+      margin: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.catalog__button {
+  display: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 10px 20px;
+  background-color: $alice-blue;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $jordy-blue;
   }
 
-  .catalog__button {
-    display: none;
+  &:active {
+    outline: none;
+    background-color:$hawkes-blue;
   }
 }
 
