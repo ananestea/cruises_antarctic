@@ -1920,7 +1920,7 @@ button,
 }
 
 .catalog__item:hover,
-.catalog__item:focus {
+.catalog__item:focus-within {
   background-color: #011c40;
   -ms-grid-rows: 311px 40px;
   grid-template-rows: 311px 40px;
@@ -1929,7 +1929,7 @@ button,
 }
 
 .catalog__item:hover h3,
-.catalog__item:focus h3 {
+.catalog__item:focus-within h3 {
   padding-top: 29px;
   padding-bottom: 0;
   padding-left: 0;
@@ -1937,7 +1937,7 @@ button,
 }
 
 .catalog__item:hover .catalog__item-wrapper,
-.catalog__item:focus .catalog__item-wrapper {
+.catalog__item:focus-within .catalog__item-wrapper {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -1951,22 +1951,22 @@ button,
 }
 
 .catalog__item:hover .catalog__item-wrapper::-webkit-scrollbar,
-.catalog__item:focus .catalog__item-wrapper::-webkit-scrollbar {
+.catalog__item:focus-within .catalog__item-wrapper::-webkit-scrollbar {
   display: none;
 }
 
 .catalog__item:hover .catalog__button,
-.catalog__item:focus .catalog__button {
+.catalog__item:focus-within .catalog__button {
   display: block;
 }
 
 .catalog__item:hover .catalog__image,
-.catalog__item:focus .catalog__image {
+.catalog__item:focus-within .catalog__image {
   display: none;
 }
 
 .catalog__item:hover .catalog__description,
-.catalog__item:focus .catalog__description {
+.catalog__item:focus-within .catalog__description {
   display: block;
 }
 
@@ -2407,13 +2407,13 @@ button,
   }
 
   .catalog__item:hover,
-  .catalog__item:focus {
+  .catalog__item:focus-within {
     padding-left: 35px;
     padding-right: 35px;
   }
 
   .catalog__item:hover,
-  .catalog__item:focus {
+  .catalog__item:focus-within {
     padding-left: 25px;
     padding-right: 25px;
   }
