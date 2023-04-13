@@ -65,7 +65,7 @@
   height: 386px;
 
   &:hover,
-  &:focus {
+  &:focus-within {
     background-color: $tangaroa;
     grid-template-rows: 311px 40px;
     padding-left: 25px;
