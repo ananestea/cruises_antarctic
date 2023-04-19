@@ -11,7 +11,7 @@
   column-gap: 40px;
 
   @media (max-width: $tablet-width) {
-    padding: 90px 45px 77px;
+    padding: 90px 45px 93px;
     column-gap: 30px;
   }
 
@@ -19,7 +19,7 @@
     grid-template-columns: 1fr;
     column-gap: 0;
     row-gap: 24px;
-    padding: 60px 15px 85px 15px;
+    padding: 58px 15px 85px 15px;
   }
 }
 
@@ -57,10 +57,15 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
     max-width: 515px;
 
     @media (max-width: $tablet-width) {
       max-width: 324px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 19px;
     }
   }
 }

@@ -1,15 +1,17 @@
 .about-us {
   margin: 0 auto;
   height: 100%;
-  max-width: 1260px;
+  max-width: 1270px;
   padding: 50px;
-  // padding-bottom: 55px;
+  padding-left: 55px;
+  padding-right: 47px;
   color: $alice-blue;
 
 
   @media (max-width: $tablet-width) {
     padding: 45px;
     padding-top: 41px;
+    padding-right: 37px;
   }
 
   @media (max-width: $mobile-width) {

@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initMenu} from './modules/init-menu.js';
+import './modules/init-menu.js';
 import {mapInitializer, map} from './modules/map';
 
 // ---------------------------------
@@ -23,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    initMenu();
     mapInitializer.observe(map);
   });
 });

@@ -1,6 +1,5 @@
 .social {
   margin-left: auto;
-  padding-top: 10px;
 
   @media (max-width: $mobile-width) {
     margin-left: 0;
@@ -14,15 +13,28 @@
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, max-content);
-  gap: 27px;
-  row-gap: 12px;
+  gap: 7px;
+  row-gap: 2px;
 
   @media (max-width: $tablet-width) {
-    gap: 23px;
+    gap: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    gap: 22px;
   }
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+
   svg {
     color: $alice-blue;
 

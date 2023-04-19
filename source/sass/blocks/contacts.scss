@@ -18,7 +18,7 @@
   @media (max-width: $mobile-width) {
     display: flex;
     flex-direction: column;
-    padding: 58px 15px 46px;
+    padding: 58px 15px 65px;
     gap: 36px;
   }
 }
@@ -79,6 +79,7 @@
   display: grid;
   grid-template-columns: 18px 1fr;
   column-gap: 10px;
+  max-width: fit-content;
 
   &:not(:last-child) {
     margin-bottom: 21px;
