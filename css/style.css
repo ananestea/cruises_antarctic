@@ -1933,7 +1933,7 @@ button,
   -ms-grid-rows: 311px 75px;
   grid-template-rows: 311px 75px;
   max-width: 260px;
-  min-height: 386px;
+  height: 386px;
 }
 
 .catalog__item:hover,
@@ -2433,6 +2433,7 @@ button,
     padding-left: 35px;
     padding-right: 35px;
     aspect-ratio: 1/1.25;
+    min-height: 386px;
   }
 
   .catalog__item {
@@ -2915,6 +2916,7 @@ button,
     padding-right: 25px;
     height: auto;
     aspect-ratio: 1/1.42;
+    min-height: 386px;
   }
 
   .catalog__item:hover .catalog__item-wrapper,
